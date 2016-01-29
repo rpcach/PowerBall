@@ -18,11 +18,16 @@ function redBall() {
 	}
 }
 
+function powerBall() {
+	var string = "<pre>"
 
-console.log("Your lucky powerball numbers:")
+	for (var i = 1; i < 6; i++) {
+		string += "White ball " + i  + ":\t" + whiteBall()+"\n"
+	};
 
-for (var i = 1; i < 6; i++) {
-	console.log("white ball " + i  + ":\t" + whiteBall())
-};
+	string += "Red Ball:\t" + redBall()+"\n"
+	string += "</pre>"
 
-console.log("red ball:\t" + redBall())
+	document.getElementById("lucky numbers").innerHTML = string
+
+}
