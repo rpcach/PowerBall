@@ -29,5 +29,4 @@ function powerBall() {
 	string += "</pre>"
 
 	document.getElementById("lucky numbers").innerHTML = string
-
 }
